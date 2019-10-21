@@ -104,6 +104,7 @@ body {
     background: linear-gradient(237.62deg, rgba(179, 0, 255, 0.7) 1.33%, rgba(7, 16, 242, 0.7) 100%), url('../img/hero-background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 nav {
     position: fixed;
@@ -124,7 +125,8 @@ nav {
     font-variant: small-caps;
     margin: .5rem;
     letter-spacing: 0.1rem;
-    transition: all 0.3s;
+    border-bottom: 3px solid  transparent;
+    transition: all 0.4s;
 }
 
 a.active {
@@ -190,7 +192,7 @@ a.active {
 .btn-lg:hover {
     color: #D7F205;
     border: 5px solid #D7F205;
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 .welcome-date {
@@ -327,6 +329,7 @@ a.active {
     display: flex;
     flex-direction: column;
     background: linear-gradient(180deg, #050A83 0%, #100F10 100%);
+    background-attachment: fixed;
 }
 
 .page-heading1 {
@@ -351,6 +354,7 @@ a.active {
     display: flex;
     flex-direction: column;
     background: linear-gradient(180deg, #CC034D 0%, rgba(216, 0, 255, 0.46) 100%);
+    background-attachment: fixed;
 }
 
 .page-heading2 {
@@ -371,6 +375,7 @@ a.active {
     background-image: url('../img/Bullseye-Gradient.svg');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 .footer {
