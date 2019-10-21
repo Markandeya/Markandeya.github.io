@@ -1,0 +1,499 @@
+/*
+font-family: 'Poppins', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+*, *::before, *::after {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: PopThin;
+    src: url('../fonts/Poppins-Thin.ttf');
+}
+
+@font-face {
+    font-family: PopLight;
+    src: url('../fonts/Poppins-Light.ttf');
+}
+
+@font-face {
+    font-family: PopMedium;
+    src: url('../fonts/Poppins-Medium.ttf');
+}
+
+body {
+    font-family: PopLight;
+}
+
+.nav-open {
+    position: absolute;
+    top: 0px;
+    /* left: 0px;
+    width: 100%; */
+    left: -5vw;
+    width: 112%;
+    height: 50vh;
+    background-color: white;
+    z-index: 1;
+    color: black;
+    --display: grid;
+    --grid-template-columns: 5% 1fr 1fr 5%;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    transform: translateY(-100%);
+}
+.menu-open {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+.menu-bar {
+    padding-right: 3rem;
+}
+
+.nav-open h3 {
+    font-family: PopMedium;
+    font-size: 1.7rem;
+    padding-bottom: 1.5em;
+}
+
+.nav-open p {
+    font-size: 1.1rem;
+}
+.nav-open a {
+    text-decoration: none;
+    color: black;
+    font-variant: small-caps;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all;
+}
+
+.nav-open a:hover {
+
+    color: #B300FF;
+    
+}
+
+.social-links img {
+    padding: 0 20px;
+} 
+
+.logo, .menu {
+    z-index: 2;
+}
+.menu {
+    cursor: pointer;
+    display: none;
+    padding-right: 5rem;
+}
+
+.wrapper {
+    color: white;
+}
+
+.hero {
+    background: linear-gradient(237.62deg, rgba(179, 0, 255, 0.7) 1.33%, rgba(7, 16, 242, 0.7) 100%), url('../img/hero-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav {
+    position: fixed;
+    min-height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    z-index: 999;
+    transition: all 0.3s;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
+    font-variant: small-caps;
+    margin: .5rem;
+    letter-spacing: 0.1rem;
+    transition: all 0.3s;
+}
+
+a.active {
+    color: #D7F205;
+    border-bottom: 3px solid  #D7F205;
+}
+
+.nav-item:hover {
+    color: #D7F205;
+}
+
+.logo {
+    font-size: 1.5rem;
+    padding-left: 5rem;
+}
+
+.page {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 5% 1fr 5%;
+}
+
+.welcome {
+    grid-column: 2/3;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.yamistha-welcome {
+    font-family: PopThin;
+    font-weight: 200;
+    font-size: 4.1rem;
+    letter-spacing: 0.07rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.yamistha-welcome-bold {
+    font-family: PopMedium;
+}
+
+.yamistha-welcome-caption {
+    font-size: 1.9rem;
+    margin-bottom: 2rem;
+}
+
+.btn-lg {
+    display: inline-block;
+    text-decoration: none;
+    border: 5px solid #23D9B7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: PopMedium;
+    letter-spacing: 0.1rem;
+    font-size: 1.5rem;
+    color: #23D9B7;
+    padding: 0.2rem 2.5rem;
+    margin: 2rem 0.5rem;
+
+    transition: all 0.3s;
+}
+
+.btn-lg:hover {
+    color: #D7F205;
+    border: 5px solid #D7F205;
+    transform: scale(1.5);
+}
+
+.welcome-date {
+    font-size: 1.5rem;
+    line-height: 27px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.welcome-location {
+    line-height: 27px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.pages {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+}
+
+.pages > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pages  h3 {
+    font-size: 1.5rem;
+    padding: 1.8rem;
+}
+
+.pages svg {
+    cursor: pointer;
+    opacity: 0.5;
+    transform: scale(2);
+}
+
+.pages svg:hover {
+    animation: dot 0.5s ease-in-out infinite alternate;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+.pages svg.active {
+    opacity: 1;
+}
+
+@keyframes dot {
+    0%{
+        transform: scale(2);
+    }
+
+    100% {
+        transform: scale(3);
+    }
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+}
+
+.about {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(45deg, rgb(38, 37, 37),rgb(40, 39, 34));
+}
+
+.page-heading-container {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-heading {
+    display: inline-block;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #E6BCF9;
+    border-bottom: 3px solid #B300FF;
+    position: inherit;
+    top: 0;
+    
+}
+
+.about-box {
+    background: rgba(7, 16, 242, 0.41);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 700px;
+    margin: 1rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: #FFF8F8; 
+}
+
+.sponsors {
+    margin-top: 1rem;
+    min-width: 300px;
+}
+.sponsor-heading {
+    font-family: PopMedium;
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: 0.05em;
+    font-variant: small-caps;
+    color: #D7F205;
+}
+
+.logos {
+    margin-top: 5rem;
+}
+
+.logos > svg {
+    height: 100px; 
+    color:white;
+    margin:1rem
+}
+
+
+.events {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, #050A83 0%, #100F10 100%);
+}
+
+.page-heading1 {
+    display: inline-block;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #FFFDFD;
+    border-bottom: 3px solid #A2D7F4;
+    position: inherit;
+    top: 0;
+    
+}
+
+.img-responsive{
+    cursor: pointer;
+    max-width: 100%;
+    margin: 0.5rem;
+}
+
+.competitions {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, #CC034D 0%, rgba(216, 0, 255, 0.46) 100%);
+}
+
+.page-heading2 {
+    display: inline-block;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #FFFDFD;
+    border-bottom: 3px solid  #D7F205;
+    position: inherit;
+    top: 0;
+    
+}
+
+.workshops {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../img/Bullseye-Gradient.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+.footer {
+    min-height: 10vh;
+    background-color: #000;
+    color: #FFFDFD;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.credits {
+    text-decoration: none;
+    color: #D7F205;
+    border-bottom: 1px dotted #D7F205;
+    transition: all 0.3s;
+}
+
+.credits:hover {
+    
+    color: #B300FF;
+    border-bottom: 1px dotted #B300FF;
+    cursor: pointer;
+}
+
+.columns {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.card-dark {
+    color: #fff;
+    background-color: #282727;
+}
+
+@media (max-width: 900px) {
+    .logo {
+        font-size: 1rem;
+        padding-left: 1rem;
+    }
+    .menu {
+        display: flex;
+        height: 1rem;
+        padding-right: 1rem;
+    }
+    .menu-bar{
+        display: none;
+    }
+    .nav-open a {
+        font-size: 1.2rem;
+    }
+    .wrapper {
+        
+        background-size: cover;
+        
+    }
+    .page {
+        grid-template-columns: 1fr;
+    }
+    .welcome {
+        grid-column: 1/2;
+        
+    }
+    .yamistha-welcome {
+        font-size: 2rem;
+    }
+    .yamistha-welcome-caption {
+        font-size: 1rem;
+    }
+    .btn-lg {
+        font-size: 1rem;
+        padding: 0.2rem 1.5rem;
+        margin: 1rem 0.5rem;
+    }
+    .welcome-date{
+        font-size: 0.8rem;
+    }
+    .welcome-location {
+        font-size: 0.7rem;
+    }
+
+    .page-heading {
+        font-size: 1.8rem;
+    }
+    .page-heading-container{
+        margin: 0;
+    }
+    .pages  h3 {
+        font-size: 0.5rem;
+        padding: 0.4rem;
+    }
+    .pages svg {
+        transform: scale(1);
+    }
+
+    .details {
+        flex-direction: column;
+        justify-content: center;
+        padding: 5vw;
+    }
+    .about-box {
+        font-size: 12px;
+        padding: 1rem 2rem;
+    }
+
+    .logos {
+        margin-top: 1rem;
+    }
+
+    .logos > svg {
+        height: 50px;
+        margin: .5rem
+    }
+
+    .img-responsive{
+        width: 110px;
+        margin: 0px;
+    }
+
+    .footer {
+        font-size: 0.8rem;
+    }
+}
