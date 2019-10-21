@@ -24,6 +24,18 @@ font-family: 'Montserrat', sans-serif;
     src: url('../fonts/Poppins-Medium.ttf');
 }
 
+.preloader {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #FFF8F8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
 body {
     font-family: PopLight;
 }
@@ -409,6 +421,10 @@ a.active {
     margin: 0;
 }
 
+.card {
+    max-width: 400px;
+}
+
 .card-dark {
     color: #fff;
     background-color: #282727;
@@ -437,6 +453,10 @@ a.active {
     }
     .page {
         grid-template-columns: 1fr;
+    }
+    .hero{
+        background-attachment: scroll;
+        background-position: 40%;
     }
     .welcome {
         grid-column: 1/2;

@@ -5,10 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Yamistha 2020</title>
+    <style>
+        .preloader {
+            position: fixed;
+            top: 0;
+            height: 100vh;
+            width: 100%;
+            background-color: #FFF8F8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+
+            transition: opacity 1s ease;
+        }
+
+        .preloader-finish {
+            opacity: 0;
+            pointer-events: none;
+        }
+    </style>
     <link rel="stylesheet" href="./css/bulma.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <div class="preloader">
+            <svg width="80px"  height="80px"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-ripple">
+                <circle cx="50" cy="50" r="14.0334" fill="none" stroke="#c0f6d2" stroke-width="6">
+                  <animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="1" keySplines="0 0.2 0.8 1" begin="-0.5s" repeatCount="indefinite"></animate>
+                  <animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="1" keySplines="0.2 0 0.8 1" begin="-0.5s" repeatCount="indefinite"></animate>
+                </circle>
+                <circle cx="50" cy="50" r="33.5671" fill="none" stroke="#ff7c81" stroke-width="6">
+                  <animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="1" keySplines="0 0.2 0.8 1" begin="0s" repeatCount="indefinite"></animate>
+                  <animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="1" keySplines="0.2 0 0.8 1" begin="0s" repeatCount="indefinite"></animate>
+                </circle>
+              </svg>
+    </div>
     <div class="wrapper">
         <header>
             <nav id="main-nav">
@@ -93,23 +125,24 @@
                                             <div class="card">
                                                     <div class="card-image">
                                                       <figure class="image is-4by3">
-                                                        <img src="./img/event1.jpg" alt="Placeholder image">
+                                                        <img src="./img/startup.svg" alt="Placeholder image">
                                                       </figure>
                                                     </div>
                                                     <div class="card-content">
                                                       <div class="media">
                                                         
                                                         <div class="media-content">
-                                                          <p class="title is-4 has-text-centered">Title</p>
-                                                          <p class="subtitle is-6 has-text-centered">subtitle</p>
+                                                          <p class="title is-4 has-text-centered">Entreumind</p>
+                                                          <p class="subtitle is-6 has-text-centered">Startup Expo</p>
                                                         </div>
                                                       </div>
                                                   
                                                       <div class="content">
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                        Phasellus nec iaculis mauris.
+                                                            A gathering of over 30 entrepreneurs, students, 
+                                                            corporate representatives from the Kerala start-up ecosystems, it is a golden opportunity 
+                                                            for networking experience, ensuring entrepreneurs meet future employees and customers.
                                                         <br>
-                                                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                                        <time datetime="2016-1-1" class="has-text-weight-bold">10:00 AM - 1 Jan 2019</time>
                                                         <br>
                                                         <br>
                                                         <a class="button is-primary has-text-black has-text-weight-semibold is-uppercase " href="#">REGISTER</a>
@@ -121,24 +154,25 @@
                                             <div class="card">
                                                 <div class="card-image">
                                                     <figure class="image is-4by3">
-                                                    <img src="./img/event.jpg" alt="Placeholder image">
+                                                    <img src="./img/presentation.svg" alt="Placeholder image">
                                                     </figure>
                                                 </div>
                                                 <div class="card-content">
                                                     <div class="media">
                                                     
                                                     <div class="media-content">
-                                                        <p class="title is-4 has-text-centered">Title</p>
-                                                        <p class="subtitle is-6 has-text-centered">subtitle</p>
+                                                        <p class="title is-4 has-text-centered">Pitch Pro</p>
+                                                        <p class="subtitle is-6 has-text-centered">Idea Pitching</p>
                                                     </div>
                                                     </div>
                                                 
                                                     <div class="content">
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                    Phasellus nec iaculis mauris.
-                                                     
+                                                            All the forces in the world is not as powerful as an idea whose time has come.. 
+                                                            So what are you waiting for!!! Hope in... let’s give a chance to your ideas 
+                                                            to be transformed by thoughts into a whole new dimension...
+                                                            Coz your ideas can be life changing.
                                                     <br>
-                                                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                                    <time datetime="2016-1-1" class="has-text-weight-bold">10:00 AM - 1 Jan 2019</time>
                                                     <br>
                                                     <br>
                                                     <a class="button is-primary has-text-black has-text-weight-semibold is-uppercase " href="#">REGISTER</a>
@@ -146,7 +180,7 @@
                                                 </div>
                                             </div>
                                     </div>
-                                    <div class="column">
+                                    <!-- <div class="column">
                                             <div class="card">
                                                 <div class="card-image">
                                                     <figure class="image is-4by3">
@@ -203,14 +237,14 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 
                             </div>
                             
                 </div>
                 <div class="container">
-                        <a href="#" class="button is-link is-rounded is-focused" >All Events >></a>
+                        <a href="#" class="button is-link is-rounded is-focused" style="margin-bottom: 1rem;">All Events >></a>
                 </div>
                 </section>
 
@@ -225,23 +259,27 @@
                                                 <div class="card">
                                                         <div class="card-image">
                                                           <figure class="image is-4by3">
-                                                            <img src="./img/event1.jpg" alt="Placeholder image">
+                                                            <img src="./img/team.svg" alt="Placeholder image">
                                                           </figure>
                                                         </div>
                                                         <div class="card-content card-dark">
                                                           <div class="media">
                                                             
                                                             <div class="media-content">
-                                                              <p class="title is-4 has-text-centered has-text-white">Title</p>
-                                                              <p class="subtitle is-6 has-text-centered has-text-light">subtitle</p>
+                                                              <p class="title is-4 has-text-centered has-text-white">Synergia</p>
+                                                              <p class="subtitle is-6 has-text-centered has-text-light">Best Management Team</p>
                                                             </div>
                                                           </div>
                                                       
                                                           <div class="content">
-                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                            Phasellus nec iaculis mauris.
+                                                                Are you up for challenges?
+                                                                Are you ready for some brain twisters?
+                                                                Can you think out of the box?
+                                                                Then 'Synergia' is your platform!
+                                                                Join with your pals and get ready to prove yourself unbeatable!
+                                                                Register now and make the opportunity!
                                                             <br>
-                                                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                                            <time datetime="2016-1-1" class="has-text-weight-bold">Prize: 60k</time>
                                                             <br>
                                                             <br>
                                                             <a class="button is-primary is-outlined has-text-weight-semibold is-uppercase " href="#">REGISTER</a>
@@ -253,24 +291,25 @@
                                                 <div class="card">
                                                     <div class="card-image">
                                                         <figure class="image is-4by3">
-                                                        <img src="./img/event.jpg" alt="Placeholder image">
+                                                        <img src="./img/manager.svg" alt="Placeholder image">
                                                         </figure>
                                                     </div>
                                                     <div class="card-content card-dark">
                                                         <div class="media">
                                                         
                                                         <div class="media-content">
-                                                            <p class="title is-4 has-text-centered has-text-white">Title</p>
-                                                            <p class="subtitle is-6 has-text-centered has-text-light">subtitle</p>
+                                                            <p class="title is-4 has-text-centered has-text-white">Maestro</p>
+                                                            <p class="subtitle is-6 has-text-centered has-text-light">Best Manager</p>
                                                         </div>
                                                         </div>
                                                     
-                                                        <div class="content">
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                        Phasellus nec iaculis mauris.
+                                                        <div class="content has-text-centered">
+                                                                We are here with an opportunity for you all to be the best in everything and exhibit 
+                                                                exceptional qualities that you possess.
+                                                                 Maestro is all about how well you manage your skills and abilities to reach the goals defined by us.
                                                          
                                                         <br>
-                                                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                                        <time datetime="2016-1-1" class="has-text-weight-bold">Prize: 40k</time>
                                                         <br>
                                                         <br>
                                                         <a class="button is-primary is-outlined has-text-weight-semibold is-uppercase " href="#">REGISTER</a>
@@ -282,24 +321,26 @@
                                                 <div class="card">
                                                     <div class="card-image">
                                                         <figure class="image is-4by3">
-                                                        <img src="./img/event3.jpg" alt="Placeholder image">
+                                                        <img src="./img/treasure.svg" alt="Placeholder image">
                                                         </figure>
                                                     </div>
                                                     <div class="card-content  card-dark">
                                                         <div class="media">
                                                         
                                                         <div class="media-content">
-                                                            <p class="title is-4 has-text-centered has-text-white">Title</p>
-                                                            <p class="subtitle is-6 has-text-centered has-text-light">subtitle</p>
+                                                            <p class="title is-4 has-text-centered has-text-white">Scavenger's Hunt</p>
+                                                            <p class="subtitle is-6 has-text-centered has-text-light">Treasure Hunt</p>
                                                         </div>
                                                         </div>
                                                     
-                                                        <div class="content">
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                        Phasellus nec iaculis mauris.
+                                                        <div class="content has-text-centered">
+                                                                Quenching for treasure? Ready for some adventure? Well you are in the right place. 
+                                                                 Traverse the vast campus of CET 
+                                                                and explore the clues that are hidden in the most anticipated spots, 
+                                                                which will lead you to the ultimate treasure chest..
                                                          
                                                         <br>
-                                                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                                        <time datetime="2016-1-1" class="has-text-weight-bold">Prize: 25k</time>
                                                         <br>
                                                         <br>
                                                         <a class="button is-primary is-outlined has-text-weight-semibold is-uppercase " href="#">REGISTER</a>
@@ -311,24 +352,24 @@
                                                 <div class="card">
                                                     <div class="card-image">
                                                         <figure class="image is-4by3">
-                                                        <img src="./img/event1.jpg" alt="Placeholder image">
+                                                        <img src="./img/quiz.svg" alt="Placeholder image">
                                                         </figure>
                                                     </div>
                                                     <div class="card-content  card-dark">
                                                         <div class="media">
                                                         
                                                         <div class="media-content">
-                                                            <p class="title is-4 has-text-centered has-text-white">Title</p>
-                                                            <p class="subtitle is-6 has-text-centered has-text-light">subtitle</p>
+                                                            <p class="title is-4 has-text-centered has-text-white">Hunky Brains</p>
+                                                            <p class="subtitle is-6 has-text-centered has-text-light">Business Quiz</p>
                                                         </div>
                                                         </div>
                                                     
                                                         <div class="content">
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                        Phasellus nec iaculis mauris.
+                                                                Now this is what you’d want to be looking forward to. Be it the creatively conceived
+                                                                metaphors in economics or the infamous trivia behind the logos of prominent conglomerates, if you think you know it all, we really want to know if you do.
                                                          
                                                         <br>
-                                                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                                        <time datetime="2016-1-1" class="has-text-weight-bold">Prize: 25k</time>
                                                         <br>
                                                         <br>
                                                         <a class="button is-primary is-outlined has-text-weight-semibold is-uppercase " href="#">REGISTER</a>
@@ -340,7 +381,7 @@
                                 </div>
                     </div>
                     <div class="container">
-                            <a href="#" class="button is-info is-rounded is-focused" >All Competitions >></a>
+                            <a href="#" class="button is-info is-rounded is-focused" style="margin-bottom: 1rem;">All Competitions >></a>
                     </div>
                     </section>
 
@@ -355,23 +396,22 @@
                                             <div class="card">
                                                     <div class="card-image">
                                                       <figure class="image is-4by3">
-                                                        <img src="./img/event1.jpg" alt="Placeholder image">
+                                                        <img src="./img/construction.svg" alt="Placeholder image">
                                                       </figure>
                                                     </div>
                                                     <div class="card-content">
                                                       <div class="media">
                                                         
                                                         <div class="media-content">
-                                                          <p class="title is-4 has-text-centered">Title</p>
-                                                          <p class="subtitle is-6 has-text-centered">subtitle</p>
+                                                          <p class="title is-4 has-text-centered">Coming soon!</p>
+                                                          <p class="subtitle is-6 has-text-centered">...</p>
                                                         </div>
                                                       </div>
                                                   
                                                       <div class="content">
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                        Phasellus nec iaculis mauris.
+                                                        Under Construction
                                                         <br>
-                                                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                                        <time datetime="2016-1-1">To be announced</time>
                                                         <br>
                                                         <br>
                                                         <a class="button is-primary has-text-black has-text-weight-semibold is-uppercase " href="#">REGISTER</a>
@@ -383,24 +423,23 @@
                                             <div class="card">
                                                 <div class="card-image">
                                                     <figure class="image is-4by3">
-                                                    <img src="./img/event.jpg" alt="Placeholder image">
+                                                    <img src="./img/construction.svg" alt="Placeholder image">
                                                     </figure>
                                                 </div>
                                                 <div class="card-content">
                                                     <div class="media">
                                                     
                                                     <div class="media-content">
-                                                        <p class="title is-4 has-text-centered">Title</p>
-                                                        <p class="subtitle is-6 has-text-centered">subtitle</p>
+                                                        <p class="title is-4 has-text-centered">Coming soon!</p>
+                                                        <p class="subtitle is-6 has-text-centered">...</p>
                                                     </div>
                                                     </div>
                                                 
                                                     <div class="content">
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                    Phasellus nec iaculis mauris.
+                                                    Under Construction
                                                      
                                                     <br>
-                                                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                                    <time datetime="2016-1-1">To be announced</time>
                                                     <br>
                                                     <br>
                                                     <a class="button is-primary has-text-black has-text-weight-semibold is-uppercase " href="#">REGISTER</a>
@@ -412,24 +451,23 @@
                                             <div class="card">
                                                 <div class="card-image">
                                                     <figure class="image is-4by3">
-                                                    <img src="./img/event3.jpg" alt="Placeholder image">
+                                                    <img src="./img/construction.svg" alt="Placeholder image">
                                                     </figure>
                                                 </div>
                                                 <div class="card-content">
                                                     <div class="media">
                                                     
                                                     <div class="media-content">
-                                                        <p class="title is-4 has-text-centered">Title</p>
-                                                        <p class="subtitle is-6 has-text-centered">subtitle</p>
+                                                        <p class="title is-4 has-text-centered">Coming soon!</p>
+                                                        <p class="subtitle is-6 has-text-centered">...</p>
                                                     </div>
                                                     </div>
                                                 
                                                     <div class="content">
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                    Phasellus nec iaculis mauris.
+                                                    Under Construction
                                                      
                                                     <br>
-                                                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                                    <time datetime="2016-1-1">To be announced</time>
                                                     <br>
                                                     <br>
                                                     <a class="button is-primary has-text-black has-text-weight-semibold is-uppercase " href="#">REGISTER</a>
@@ -441,24 +479,23 @@
                                             <div class="card">
                                                 <div class="card-image">
                                                     <figure class="image is-4by3">
-                                                    <img src="./img/event1.jpg" alt="Placeholder image">
+                                                    <img src="./img/construction.svg" alt="Placeholder image">
                                                     </figure>
                                                 </div>
                                                 <div class="card-content">
                                                     <div class="media">
                                                     
                                                     <div class="media-content">
-                                                        <p class="title is-4 has-text-centered">Title</p>
-                                                        <p class="subtitle is-6 has-text-centered">subtitle</p>
+                                                        <p class="title is-4 has-text-centered">Coming soon!</p>
+                                                        <p class="subtitle is-6 has-text-centered">...</p>
                                                     </div>
                                                     </div>
                                                 
                                                     <div class="content">
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                    Phasellus nec iaculis mauris.
+                                                    Under Construction
                                                      
                                                     <br>
-                                                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                                    <time datetime="2016-1-1">To be announced</time>
                                                     <br>
                                                     <br>
                                                     <a class="button is-primary has-text-black has-text-weight-semibold is-uppercase " href="#">REGISTER</a>
@@ -470,7 +507,7 @@
                             </div>
                     </div>
                     <div class="container">
-                            <a href="#" class="button is-warning is-rounded is-focused" >All Workshops >></a>
+                            <a href="#" class="button is-warning is-rounded is-focused" style="margin-bottom: 1rem;">All Workshops >></a>
                     </div>
                 </section>
                 <section class="footer">
@@ -486,5 +523,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>   
     <script src="./js/app.js"></script>
+    <script>
+        const preloader = document.querySelector('.preloader');
+        window.addEventListener('load', () => {
+            preloader.classList.add('preloader-finish');
+        }); 
+    </script>
 </body>
 </html>
