@@ -197,7 +197,7 @@ a.active {
     color: #23D9B7;
     padding: 0.2rem 2.5rem;
     margin: 2rem 0.5rem;
-
+    backface-visibility: hidden;
     transition: all 0.3s;
 }
 
