@@ -401,6 +401,28 @@ a.active {
     text-align: center;
 }
 
+.footer svg {
+    margin:0 10px;
+    height: 30px;
+    color: #FFF8F8;
+    transition: all 0.3s;
+}
+
+
+.footer svg:hover {
+    height: 30px;
+    color: #D7F205;
+    transform: scale(1.1);
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
 .credits {
     text-decoration: none;
     color: #D7F205;
