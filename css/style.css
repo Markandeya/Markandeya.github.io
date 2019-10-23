@@ -40,6 +40,12 @@ body {
     font-family: PopLight;
 }
 
+.reset-a, .reset-a:hover, .reset-a:visited, .reset-a:focus, .reset-a:active  {
+    text-decoration: none;
+    color: inherit;
+    outline: 0;
+}
+
 .nav-open {
     position: absolute;
     top: 0px;
@@ -268,6 +274,7 @@ a.active {
     justify-content: space-around;
     text-align: center;
     width: 100%;
+    padding-bottom: 1rem;
 }
 
 .about {
@@ -494,6 +501,10 @@ a.active {
         font-size: 1rem;
         padding: 0.2rem 1.5rem;
         margin: 1rem 0.5rem;
+    }
+
+    .button {
+        transition: all 0.3s;
     }
     .welcome-date{
         font-size: 0.8rem;
