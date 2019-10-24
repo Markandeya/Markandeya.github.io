@@ -226,7 +226,7 @@ a.active {
 .eighty {
     position: absolute;
     max-height: 80px;
-    bottom: 2rem;
+    bottom: 1rem;
     left: 50%;
     transform: translateX(-50%);
 }
