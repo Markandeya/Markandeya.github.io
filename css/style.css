@@ -101,6 +101,10 @@ body {
     
 }
 
+.social-footer a {
+    backface-visibility: hidden;
+}
+
 .social-links img {
     padding: 0 20px;
 } 
@@ -174,6 +178,12 @@ a.active {
     text-align: center;
 }
 
+.yamistha-logo {
+    height: 5rem;
+    margin: 0;
+    padding:0;
+}
+
 .yamistha-welcome {
     font-family: PopThin;
     font-weight: 200;
@@ -211,6 +221,14 @@ a.active {
     color: #D7F205;
     border: 5px solid #D7F205;
     transform: scale(1.2);
+}
+
+.eighty {
+    position: absolute;
+    max-height: 80px;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .welcome-date {
@@ -281,7 +299,8 @@ a.active {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(45deg, rgb(38, 37, 37),rgb(40, 39, 34));
+    /* background: linear-gradient(45deg, rgb(38, 37, 37),rgb(40, 39, 34)); */
+    background: linear-gradient(to right, #22013b, rgb(53, 5, 99));
 }
 
 .page-heading-container {
@@ -305,7 +324,6 @@ a.active {
 }
 
 .about-box {
-    background: rgba(7, 16, 242, 0.41);
     padding-top: 5rem;
     padding-bottom: 5rem;
     padding-left: 2rem;
@@ -347,8 +365,11 @@ a.active {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(180deg, #050A83 0%, #100F10 100%);
+    background:linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url('../img/event-background.jpg');
+    background-size: cover;
+
     background-attachment: fixed;
+    padding-bottom: 2rem;
 }
 
 .page-heading1 {
@@ -356,7 +377,7 @@ a.active {
     font-size: 2rem;
     text-transform: capitalize;
     color: #FFFDFD;
-    border-bottom: 3px solid #A2D7F4;
+    border-bottom: 3px solid #D7F205;
     position: inherit;
     top: 0;
     
@@ -372,7 +393,7 @@ a.active {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(180deg, #CC034D 0%, rgba(216, 0, 255, 0.46) 100%);
+    background: linear-gradient(to bottom, rgb(230, 3, 86) 0%, rgba(0, 17, 255, 0.9) 100%);
     background-attachment: fixed;
 }
 
@@ -452,11 +473,22 @@ a.active {
 
 .card {
     max-width: 400px;
+    margin-bottom: 2rem;
 }
 
 .card-dark {
     color: #fff;
     background-color: #282727;
+}
+
+.card-color {
+    color: #fff;
+    /* background-color: rgb(60, 14, 104); */
+    background-color: rgb(37, 3, 68);
+}
+
+.card-trans {
+    opacity: 0.95;
 }
 
 @media (max-width: 900px) {
