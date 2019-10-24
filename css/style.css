@@ -572,6 +572,7 @@ a.active {
 
     .eighty{
         max-height: 60px;
+        bottom: 5px;
     }
 
     .logos {
