@@ -161,8 +161,9 @@ a.active {
 }
 
 .logo {
-    font-size: 1.5rem;
-    padding-left: 5rem;
+    /* font-size: 1.5rem; */
+    padding-left: 2rem;
+    height: 50px;
 }
 
 .page {
@@ -567,6 +568,10 @@ a.active {
     .about-box {
         font-size: 12px;
         padding: 1rem 2rem;
+    }
+
+    .eighty{
+        max-height: 60px;
     }
 
     .logos {
