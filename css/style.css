@@ -44,6 +44,11 @@ body {
     z-index: 1000;
 }
 
+.modal-card-head, .modal-card-title, .modal-card-body, .modal-card-foot {
+    background-color: rgba(0,0,1,.7);
+    color: #fff;
+}
+
 .reset-a, .reset-a:hover, .reset-a:visited, .reset-a:focus, .reset-a:active  {
     text-decoration: none;
     color: inherit;
