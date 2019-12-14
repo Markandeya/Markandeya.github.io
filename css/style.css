@@ -40,6 +40,10 @@ body {
     font-family: PopLight;
 }
 
+.modal {
+    z-index: 1000;
+}
+
 .reset-a, .reset-a:hover, .reset-a:visited, .reset-a:focus, .reset-a:active  {
     text-decoration: none;
     color: inherit;
