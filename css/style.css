@@ -24,6 +24,10 @@ font-family: 'Montserrat', sans-serif;
     src: url('../fonts/Poppins-Medium.ttf');
 }
 
+.capitalize {
+    text-transform: capitalize;
+}
+
 .preloader {
     position: fixed;
     top: 0;
@@ -109,6 +113,7 @@ body {
     color: #B300FF;
     
 }
+
 
 .social-footer a {
     backface-visibility: hidden;
@@ -429,7 +434,31 @@ a.active {
     background-attachment: fixed;
 }
 
+.skew-box {
+    position: relative;
+}
+
+.skew-box:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(315deg, #B300FF, cyan);
+    transform: skew(2deg, 2deg);
+    z-index: 0;
+}
+
+.skew-content {
+    background-color: black;
+    position: relative;
+    padding: 20px;
+    z-index: 1;
+}
+
 .footer {
+    position: relative;
     min-height: 10vh;
     background-color: #000;
     color: #FFFDFD;
@@ -438,6 +467,13 @@ a.active {
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
+}
+
+.footer-heading  > p {
+    border-bottom: 1px solid #D7F205;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    padding-bottom: 1px;
 }
 
 .footer svg {
