@@ -3,7 +3,9 @@ font-family: 'Poppins', sans-serif;
 font-family: 'Montserrat', sans-serif;
 */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     margin: 0;
     border: 0;
     box-sizing: border-box;
@@ -48,12 +50,19 @@ body {
     z-index: 1000;
 }
 
-.modal-card-head, .modal-card-title, .modal-card-body, .modal-card-foot {
-    background-color: rgba(0,0,1,.7);
+.modal-card-head,
+.modal-card-title,
+.modal-card-body,
+.modal-card-foot {
+    background-color: rgba(0, 0, 1, .7);
     color: #fff;
 }
 
-.reset-a, .reset-a:hover, .reset-a:visited, .reset-a:focus, .reset-a:active  {
+.reset-a,
+.reset-a:hover,
+.reset-a:visited,
+.reset-a:focus,
+.reset-a:active {
     text-decoration: none;
     color: inherit;
     outline: 0;
@@ -77,6 +86,7 @@ body {
     text-align: center;
     transform: translateY(-100%);
 }
+
 .menu-open {
     display: flex;
     justify-content: center;
@@ -99,6 +109,7 @@ body {
 .nav-open p {
     font-size: 1.1rem;
 }
+
 .nav-open a {
     text-decoration: none;
     color: black;
@@ -111,7 +122,7 @@ body {
 .nav-open a:hover {
 
     color: #B300FF;
-    
+
 }
 
 
@@ -121,11 +132,13 @@ body {
 
 .social-links img {
     padding: 0 20px;
-} 
+}
 
-.logo, .menu {
+.logo,
+.menu {
     z-index: 2;
 }
+
 .menu {
     cursor: pointer;
     display: none;
@@ -142,6 +155,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
+
 nav {
     position: fixed;
     min-height: 10vh;
@@ -161,13 +175,13 @@ nav {
     font-variant: small-caps;
     margin: .5rem;
     letter-spacing: 0.1rem;
-    border-bottom: 3px solid  transparent;
+    border-bottom: 3px solid transparent;
     transition: all 0.4s;
 }
 
 a.active {
     color: #D7F205;
-    border-bottom: 3px solid  #D7F205;
+    border-bottom: 3px solid #D7F205;
 }
 
 .nav-item:hover {
@@ -197,7 +211,7 @@ a.active {
 .yamistha-logo {
     height: 5rem;
     margin: 0;
-    padding:0;
+    padding: 0;
 }
 
 .yamistha-welcome {
@@ -265,13 +279,13 @@ a.active {
     transform: translateY(-50%);
 }
 
-.pages > div {
+.pages>div {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.pages  h3 {
+.pages h3 {
     font-size: 1.5rem;
     padding: 1.8rem;
 }
@@ -292,7 +306,7 @@ a.active {
 }
 
 @keyframes dot {
-    0%{
+    0% {
         transform: scale(2);
     }
 
@@ -336,7 +350,7 @@ a.active {
     border-bottom: 3px solid #B300FF;
     position: inherit;
     top: 0;
-    
+
 }
 
 .about-box {
@@ -349,13 +363,14 @@ a.active {
     font-size: 1.5rem;
     letter-spacing: 0.05em;
     text-align: left;
-    color: #FFF8F8; 
+    color: #FFF8F8;
 }
 
 .sponsors {
     margin-top: 1rem;
     min-width: 300px;
 }
+
 .sponsor-heading {
     font-family: PopMedium;
     text-transform: uppercase;
@@ -370,10 +385,10 @@ a.active {
     margin-top: 5rem;
 }
 
-.logos > svg {
-    height: 100px; 
-    color:white;
-    margin:1rem
+.logos>svg {
+    height: 100px;
+    color: white;
+    margin: 1rem
 }
 
 
@@ -381,7 +396,7 @@ a.active {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background:linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url('../img/event-background.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/event-background.jpg');
     background-size: cover;
 
     background-attachment: fixed;
@@ -396,10 +411,10 @@ a.active {
     border-bottom: 3px solid #D7F205;
     position: inherit;
     top: 0;
-    
+
 }
 
-.img-responsive{
+.img-responsive {
     cursor: pointer;
     max-width: 100%;
     margin: 0.5rem;
@@ -418,10 +433,10 @@ a.active {
     font-size: 2rem;
     text-transform: capitalize;
     color: #FFFDFD;
-    border-bottom: 3px solid  #D7F205;
+    border-bottom: 3px solid #D7F205;
     position: inherit;
     top: 0;
-    
+
 }
 
 .workshops {
@@ -435,7 +450,9 @@ a.active {
 }
 
 .skew-box {
+    display: flex;
     position: relative;
+    margin: 1rem;
 }
 
 .skew-box:before {
@@ -457,6 +474,12 @@ a.active {
     z-index: 1;
 }
 
+.footer-responsive {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
 .footer {
     position: relative;
     min-height: 10vh;
@@ -469,7 +492,7 @@ a.active {
     text-align: center;
 }
 
-.footer-heading  > p {
+.footer-heading>p {
     border-bottom: 1px solid #D7F205;
     text-transform: uppercase;
     margin-bottom: 0px;
@@ -477,7 +500,7 @@ a.active {
 }
 
 .footer svg {
-    margin:0 10px;
+    margin: 0 10px;
     height: 30px;
     color: #FFF8F8;
     transition: all 0.3s;
@@ -506,7 +529,7 @@ a.active {
 }
 
 .credits:hover {
-    
+
     color: #B300FF;
     border-bottom: 1px dotted #B300FF;
     cursor: pointer;
@@ -539,44 +562,59 @@ a.active {
 }
 
 @media (max-width: 900px) {
+    .footer-responsive {
+        flex-direction: column;
+
+    }
+
     .logo {
         font-size: 1rem;
         padding-left: 1rem;
         height: 50px;
     }
+
     .menu {
         display: flex;
         height: 1rem;
         padding-right: 1rem;
     }
-    .menu-bar{
+
+    .menu-bar {
         display: none;
     }
+
     .nav-open a {
         font-size: 1.2rem;
     }
+
     .wrapper {
-        
+
         background-size: cover;
-        
+
     }
+
     .page {
         grid-template-columns: 1fr;
     }
-    .hero{
+
+    .hero {
         background-attachment: scroll;
         background-position: 40%;
     }
+
     .welcome {
         grid-column: 1/2;
-        
+
     }
+
     .yamistha-welcome {
         font-size: 2rem;
     }
+
     .yamistha-welcome-caption {
         font-size: 1rem;
     }
+
     .btn-lg {
         font-size: 1rem;
         padding: 0.2rem 1.5rem;
@@ -586,9 +624,11 @@ a.active {
     .button {
         transition: all 0.3s;
     }
-    .welcome-date{
+
+    .welcome-date {
         font-size: 0.8rem;
     }
+
     .welcome-location {
         font-size: 0.7rem;
     }
@@ -596,13 +636,16 @@ a.active {
     .page-heading {
         font-size: 1.8rem;
     }
-    .page-heading-container{
+
+    .page-heading-container {
         margin-top: 2rem;
     }
-    .pages  h3 {
+
+    .pages h3 {
         font-size: 0.5rem;
         padding: 0.4rem;
     }
+
     .pages svg {
         transform: scale(1);
     }
@@ -612,12 +655,13 @@ a.active {
         justify-content: center;
         padding: 5vw;
     }
+
     .about-box {
         font-size: 12px;
         padding: 1rem 2rem;
     }
 
-    .eighty{
+    .eighty {
         max-height: 60px;
         bottom: 5px;
     }
@@ -626,12 +670,12 @@ a.active {
         margin-top: 1rem;
     }
 
-    .logos > svg {
+    .logos>svg {
         height: 50px;
         margin: .5rem
     }
 
-    .img-responsive{
+    .img-responsive {
         width: 110px;
         margin: 0px;
     }
